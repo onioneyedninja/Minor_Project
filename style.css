@@ -1,0 +1,182 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a background color */
+  body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #1A512E ;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+  }
+  
+  .header a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  /* Main container styles */
+  .main {
+    display: flex;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    width: 250px;
+    background-color: #f5f8fa;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    color: #63A91F;
+    text-decoration: none;
+  }
+  
+  /* Feed styles */
+  .feed {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Tweet styles */
+  .tweet {
+    padding: 15px 0;
+   
+    border-bottom: 1px solid #e1e8ed;
+    padding: 10px 0;
+    display: flex;
+  }
+  
+  .tweet .user {
+    vertical-align: bottom;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .tweet .user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .tweet .content p {
+    margin: 0;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #fff;
+    text-align: left;
+    padding: 10px;
+    color: #8899a6;
+    font-size: 14px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .main {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+    }
+  }
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .post-form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  .attachments label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input[type="file"] {
+    margin-top: 5px;
+  }
+  
+  .location label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  #location-result {
+    display: block;
+    margin-top: 5px;
+    font-style: italic;
+  }
+  
+  button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #63A91F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #63A91F;}
+    
