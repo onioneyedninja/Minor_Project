@@ -1,182 +1,210 @@
-/* Reset some default styles */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto&display=swap');
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-  }
-  
-  /* Set a background color */
-  body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Header styles */
-  .header {
-    background-color: #1A512E ;
-    color: #fff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #f4f8fb;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-  .header h1 {
-    font-size: 24px;
-  }
-  
-  .header a {
-    color: #fff;
+}
+
+header aside {
+    width: 15%;
+    height: 100%;
+    background: white;
+    padding: 15px 0px 15px 30px;
+}
+
+header section {
+    position: relative;
+    width: 85%;
+    height: 100%;
+    /* border: 2px solid green; */
+}
+
+header aside .logo {
+    font-size: 30px;
+    color: #1ca1f1;
+}
+
+header aside ul {
+    list-style-type: none;
+    margin-top: 50px;
+}
+
+header aside ul li {
+    padding: 10px 0px;
+    margin-top: 10px;   
+}
+
+header aside ul li a {
     text-decoration: none;
-    margin-left: 10px;
-  }
-  
-  /* Main container styles */
-  .main {
-    display: flex;
-    background-color: #fff;
-    margin: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Sidebar styles */
-  .sidebar {
-    width: 250px;
-    background-color: #f5f8fa;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 20px;
-  }
-  
-  .sidebar li {
-    margin-bottom: 10px;
-  }
-  
-  .sidebar a {
-    color: #63A91F;
-    text-decoration: none;
-  }
-  
-  /* Feed styles */
-  .feed {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  /* Tweet styles */
-  .tweet {
-    padding: 15px 0;
-   
-    border-bottom: 1px solid #e1e8ed;
-    padding: 10px 0;
-    display: flex;
-  }
-  
-  .tweet .user {
-    vertical-align: bottom;
+    color: rgb(0, 0, 0, .5);
+    font-size: 16px;
+    font-weight: 500;
     display: flex;
     align-items: center;
+    transition: .3s linear;
+}
+
+header aside ul li a:hover {
+    color: #1ca1f1;
+}
+
+header aside ul li a i {
     margin-right: 10px;
-  }
-  
-  .tweet .user img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .tweet .content p {
-    margin: 0;
-  }
-  
-  /* Footer styles */
-  .footer {
-    background-color: #fff;
-    text-align: left;
-    padding: 10px;
-    color: #8899a6;
-    font-size: 14px;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .main {
-      flex-direction: column;
-    }
-  
-    .sidebar {
-      width: 100%;
-    }
-  }
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .post-form {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: vertical;
-  }
-  
-  .attachments label {
-    display: block;
-    margin-top: 10px;
-  }
-  
-  input[type="file"] {
-    margin-top: 5px;
-  }
-  
-  .location label {
-    display: block;
-    margin-top: 10px;
-  }
-  
-  #location-result {
-    display: block;
-    margin-top: 5px;
-    font-style: italic;
-  }
-  
-  button {
-    display: block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #63A91F;
-    color: #fff;
+    font-size: 20px;
+}
+
+header aside ul li:nth-child(7) {
+    border-right: 3px solid #1ca1f1;
+}
+
+header aside ul li:nth-child(7) a {
+    color:  #1ca1f1;
+}
+
+header aside button {
+    margin-top: 40px;
+    padding: 10px 50px;
+    border-radius: 20px;
     border: none;
-    border-radius: 5px;
+    outline: none;
+    color: white;
+    background: #1ca1f1;
+    transition: .3s linear;
     cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #63A91F;}
-    
+}
+
+header aside button:hover {
+    background: rgb(28, 161, 241, .5);
+}
+
+header section nav {
+    width: 100%;
+    height: 8%;
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+header section nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header section nav ul li {
+    padding: 3px 25px 3px 0px;
+}
+
+header section nav ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    transition: .3s linear;
+}
+header section nav ul li a:hover {
+    color: grey;
+}
+
+header section nav .search_bar {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f8fb;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+header section nav .search_bar input {
+    width: 90%;
+    padding: 3px 15px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    background: none;
+}
+
+header section nav .search_bar .bi {
+    font-size: 14px;
+}
+
+header section nav .user{
+    display: flex;
+    align-items: center;
+}
+
+header section nav .user img {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+header section::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background: url(img/2.jpg)no-repeat center center/cover;
+    top: 8%;
+    border-radius: 0px 0px 20px 0px;
+    opacity: .9;
+}
+
+header section .profile_post_follow_bx {
+    position: relative;
+    top: 18%;
+    width: 100%;
+    height: 73%;
+    border: 1px solid black;
+    display: flex;
+    /* justify-content: center; */
+}
+
+header section .profile_post_follow_bx .profile_bx {
+    width: 250px;
+    height: auto;
+    border: 1px solid black;
+}
+
+header section .profile_post_follow_bx .profile_bx .profile_card {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: white;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0, .2);
+    padding: 15px 10px 0px 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header section .profile_post_follow_bx .profile_bx .profile_card .blue_tick_pc {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+}
+
+header section .profile_post_follow_bx .profile_bx .profile_card .profile_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
