@@ -12,13 +12,13 @@
         <aside>
             <a href="#" class="logo"><i class="fa-solid fa-ghost"></i></a>
             <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li class="li_active"><a href="/"><i class="fa-solid fa-house"></i>Home</a></li>
                 <li><a href="#"><i class="fa-solid fa-hashtag"></i>Explore</a></li>
                 <li><a href="#"><i class="fa-solid fa-bell"></i>Notification</a></li>
                 <li><a href="#"><i class="fa-solid fa-message"></i>Message</a></li>
                 <li><a href="#"><i class="fa-solid fa-bookmark"></i>Bookmark</a></li>
                 <li><a href="#"><i class="fa-solid fa-clipboard-list"></i>List</a></li>
-                <li><a href="#"><i class="fa-solid fa-user"></i></i>Profile</a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i></i>Profile</a></li>
                 <li><a href="#"><i class="fa-solid fa-ellipsis"></i>More</a></li>
             </ul>
             <button>Tweet</button>
@@ -86,6 +86,93 @@
                                 <i class="fa-solid fa-ellipsis"></i>
                             </nav>
                             <div class="post_main_bx">
+                                <!-- Tweet Box Start -->
+                                <div class="home_page_first_bx">
+                                    <img src="/img/1.jfif" alt="" class="home_profile_pic">
+                                    <div class="write_tweet_bx">
+                                        <button id="audience_btn">
+                                            Everyone <i class="fa-solid fa-angle-down"></i>
+                                        </button>
+                                        <div class="show_bx show_bx_1">
+                                            <h6>Choose audience</h6>
+                                            <li class="check_audience">
+                                                <div>
+                                                <i class="fa-solid fa-earth-asia"></i>
+                                                <h6>Everyone</h6>
+                                                </div>
+                                                <i class="fa-solid fa-check check_audience_i"></i>
+                                            </li>
+                                            <li class="check_audience">
+                                                <div>
+                                                    <i class="fa-solid fa-users-gear"></i>
+                                                <div class="edit_tweet_user">
+                                                    <h6>Followers</h6>
+                                                    <span>0 People</span> <button>Edit</button>
+                                                </div>
+                                                </div>
+                                                <i class="fa-solid fa-check check_audience_i"></i>
+                                            </li>
+                                        </div>
+                                        <br>
+                                        <textarea name="" id="tweet_text_area" oninput="auto_grow(this)" maxlength="200" placeholder="What's happening"></textarea>
+                                        <button class="select_reply_btn">
+                                            <i class="fa-solid fa-earth-asia"></i> Everyone can reply
+                                        </button>
+                                        <div class="show_bx who_can_reply_bx">
+                                            <h6>Choose audience</h6>
+                                            <p>Choose who can reply to this Tweet. <br>
+                                            Anyone mentioned can always reply.</p>
+                                            <li class="who_can_reply">
+                                                <div>
+                                                <i class="fa-solid fa-earth-asia"></i>
+                                                <h6>Everyone can reply</h6>
+                                                </div>
+                                                <i class="fa-solid fa-check who_can_reply_i"></i>
+                                            </li>
+                                            <li class="who_can_reply">
+                                                <div>
+                                                    <i class="fa-solid fa-user-check"></i>
+                                                <h6>Following</h6>
+                                                </div>
+                                                <i class="fa-solid fa-check who_can_reply_i"></i>
+                                            </li>
+                                            <li class="who_can_reply">
+                                                <div>
+                                                <i style="font-style: normal;">@</i>                                                
+                                                <h6>Only people you mention</h6>
+                                                </div>
+                                                <i class="fa-solid fa-check who_can_reply_i"></i>
+                                            </li>
+                                        </div>
+                                        <div class="attach_media">
+                                            <div class="select_media">
+                                                <div class="media_card">
+                                                    <input type="file" name="" accept="image/jpg, image/png, image/gif, video/mp4" id="">
+                                                    <i class="fa-solid fa-image"></i>
+                                                </div>
+                                                <div class="media_card">
+                                                    <i class="fa-solid fa-gift"></i>
+                                                </div>
+                                                <div class="media_card">
+                                                    <i class="fa-solid fa-square-poll-vertical"></i>
+                                                </div>
+                                                <div class="media_card">
+                                                    <i class="fa-regular fa-face-smile"></i>
+                                                </div>
+                                                <div class="media_card">
+                                                    <i class="fa-solid fa-calendar-week"></i>
+                                                </div>
+                                                <div class="media_card">
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                </div>
+                                            </div>
+                                            <div class="tweet_letter_count">
+                                                <h6 id="text_limit">100%</h6>
+                                                <button id="tweet_post">Tweet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="post_card_bx">
                                     <div class="post_portfolio">
                                         <img src="img/1.jfif" alt="">
