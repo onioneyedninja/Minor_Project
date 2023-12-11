@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.hero{
+  display: flex;
+  justify-content: space-between;
+  background-color: #23262a;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 40px;
+  text-align: left;
+  padding-left: 30%;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-family: 'Poppins';
+  color: white;
+}
+
+nav ul a {
+  font-family: 'Exo 2';
+  text-decoration: none;
+  color: white;
+  margin-right: 50px;
+  text-align: right;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color:#EFDAB9;
+  transition: .4s;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.bg-clip {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+  .bg-clip {
+      width: 100%;
+      height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9){
+  .bg-clip {
+      width: auto;
+      height: 100%;
+  }
+}
+
+.btn {
+  background-color: #23262a;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform .4s;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: last baseline;
+}
+
+.content h1{
+  text-decoration: none;
+  position: relative;
+  color: white;
+  margin-bottom: 150px;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
